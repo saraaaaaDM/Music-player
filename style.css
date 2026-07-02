@@ -1,0 +1,125 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* BACKGROUND */
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+}
+
+/* PLAYER CONTAINER */
+.player {
+  width: 320px;
+  background: #fff;
+  padding: 25px 30px;
+  border-radius: 25px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+/* COVER IMAGE */
+.player img.cover {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+
+/* TITLE & ARTIST */
+.player h2 {
+  font-size: 18px;
+  margin: 10px 0 5px;
+  color: #333;
+}
+
+.player p {
+  font-size: 14px;
+  color: #777;
+}
+
+/* CONTROLS */
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.controls button {
+  border: none;
+  background: #f1f1f1;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.controls button:hover {
+  background: #ddd;
+}
+
+/* MAIN PLAY BUTTON */
+.controls .play {
+  background: #6c5ce7;
+  color: white;
+}
+
+.controls .play:hover {
+  background: #5a4bd6;
+}
+
+/* PROGRESS BAR */
+.progress-container {
+  width: 100%;
+  height: 5px;
+  background: #e0e0e0;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 15px 0;
+}
+
+.progress {
+  height: 5px;
+  background: #6c5ce7;
+  width: 0%;
+  border-radius: 5px;
+}
+
+/* TIME */
+.time {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #666;
+}
+
+/* VOLUME */
+.volume-container {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+input[type="range"] {
+  width: 100%;
+  accent-color: #6c5ce7;
+}
+
+/* RESPONSIVE */
+@media (max-width: 400px) {
+  .player {
+    width: 90%;
+  }
+}
